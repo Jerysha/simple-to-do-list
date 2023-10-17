@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+i,
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin: auto 10px;
+    max-width: 600px;
+    width: 500px;
+    border: 2px solid orange;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+.input-box button {
+    font-weight: 800;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(96, 196, 96);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-box button:hover {
+    background-color: darkgreen;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.show {
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
+    width: 40%;
+    color: rgb(196, 4, 4);
+    background: lightgray;
+}
+
+.empty {
+    display: none;
+}
+
+.row {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+li {
+    word-break: break-all;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.task-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#complete {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.task-btn i {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.task-btn i:hover {
+    opacity: 0.7;
+}
+
+.delete {
+    background: rgb(240, 1, 1);
+}
+
+.edit {
+    background: orange;
+}
+
+@media (max-width: 400px) {
+    li {
+        overflow: hidden;
+        flex-direction: column;
+    }
+}
